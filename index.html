@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naymon Nafi Supto | Aspiring Software Developer & CSE Student</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Naymon Nafi Supto - Aspiring Software Developer & CSE Student at UITS. Building software, learning every day. Based in Narayanganj, Bangladesh.">
+  <meta name="keywords" content="Naymon Nafi Supto, portfolio, software developer, CSE student, UITS, web development, Bangladesh, C programming">
+  <meta name="author" content="Naymon Nafi Supto">
+  <meta property="og:title" content="Naymon Nafi Supto | Portfolio">
+  <meta property="og:description" content="Aspiring Software Developer & CSE Student | Building Software. Learning Every Day.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- Canvas Background -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Gradient Orbs -->
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="loader-logo">NNS.</div>
+    <div class="loader-bar">
+      <div class="loader-fill"></div>
+    </div>
+  </div>
+
+  <!-- ==============================
+       NAVBAR
+  ============================== -->
+  <nav id="navbar" aria-label="Main navigation">
+    <a href="#hero" class="nav-logo">NNS.</a>
+
+    <ul class="nav-links" id="nav-links" role="list">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact" class="nav-cta">Contact Me</a></li>
+    </ul>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <main>
+    <!-- ==============================
+         HERO SECTION
+    ============================== -->
+    <section id="hero">
+      <div class="hero-container">
+
+        <!-- Hero Content -->
+        <div class="hero-content">
+          <p class="hero-eyebrow">// Building Software. Learning Every Day.</p>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Naymon<br>Nafi Supto</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Aspiring Software Developer &amp; CSE Student
+          </p>
+
+          <div class="hero-typing-wrapper">
+            <span class="typing-prefix">&gt;</span>
+            <span id="typing-text">Problem Solver</span>
+            <span class="typing-cursor"></span>
+          </div>
+
+          <p class="hero-description">
+            I'm a first-year Computer Science &amp; Engineering student passionate about software development, problem-solving, and building applications that solve real-world problems. Currently strengthening my fundamentals in C while exploring web development and modern technologies.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn-primary" id="hero-view-projects">
+              <i class="fas fa-rocket"></i>
+              View My Projects
+            </a>
+            <a href="#contact" class="btn-secondary" id="hero-get-in-touch">
+              <i class="fas fa-paper-plane"></i>
+              Get in Touch
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://github.com/Supto71" class="social-link" target="_blank" rel="noopener" id="social-github" aria-label="GitHub profile">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/naymon-nafi-supto-4a3ba33b6" class="social-link" target="_blank" rel="noopener" id="social-linkedin" aria-label="LinkedIn profile">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:mdsupto718@gmail.com" class="social-link" id="social-email" aria-label="Send email">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="tel:+8801975358480" class="social-link" id="social-phone" aria-label="Phone number">
+              <i class="fas fa-phone"></i>
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-number" data-target="6" data-suffix="+">0+</div>
+              <div class="stat-label">Projects Built</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <div class="stat-number" data-target="1" data-suffix="st">0</div>
+              <div class="stat-label">Year CSE</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <div class="stat-number" data-target="2" data-suffix="">0</div>
+              <div class="stat-label">Languages Known</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual -->
+        <div class="hero-visual">
+          <div class="profile-ring">
+            <div class="profile-img-wrapper">
+              <img src="profile.png" alt="Naymon Nafi Supto – Software Developer">
+            </div>
+
+            <div class="profile-badge badge-top">
+              <div class="badge-dot"></div>
+              <span>Open to Opportunities</span>
+            </div>
+
+            <div class="profile-badge badge-bottom">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Narayanganj, Bangladesh</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="scroll-indicator">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         ABOUT SECTION
+    ============================== -->
+    <section id="about">
+      <div class="about-container">
+
+        <!-- Left: Text Content -->
+        <div class="about-text">
+          <span class="section-tag reveal"><i class="fas fa-user-astronaut"></i> About Me</span>
+          <h2 class="section-title reveal">Currently Building<br><span class="gradient-text">My Foundation</span></h2>
+
+          <div class="about-bio">
+            <p class="reveal">
+              I'm a first-year Computer Science &amp; Engineering student at UITS with a strong interest in software development and problem-solving. I'm currently building a solid foundation in <strong>C programming</strong>, <strong>Git &amp; GitHub</strong>, and modern web development while continuously improving my coding skills through hands-on projects.
+            </p>
+            <p class="reveal">
+              Beyond academics, I enjoy <strong>teaching mathematics</strong>, which has strengthened my analytical thinking, communication, and problem-solving abilities. I believe learning is a continuous journey, and I'm always eager to explore new technologies and challenge myself with meaningful projects.
+            </p>
+            <p class="reveal">
+              My long-term goal is to become a <strong>full-stack software engineer</strong> who builds reliable, user-focused applications and contributes to impactful software that makes a difference.
+            </p>
+          </div>
+
+          <div class="philosophy-card reveal">
+            <div class="quote-mark">"</div>
+            <p>I believe great software isn't built overnight. It's built through consistency, curiosity, and a willingness to learn from every challenge. Every line of code I write is another step toward becoming the software engineer I aspire to be.</p>
+            <p class="author">— Learning. Building. Improving.</p>
+          </div>
+        </div>
+
+        <!-- Right: Quick Stats -->
+        <div>
+          <div class="quick-stats-grid">
+            <div class="stat-card reveal">
+              <div class="stat-card-icon"><i class="fas fa-graduation-cap"></i></div>
+              <div class="stat-card-value">1st Year</div>
+              <div class="stat-card-label">CSE Student at UITS</div>
+            </div>
+            <div class="stat-card reveal">
+              <div class="stat-card-icon"><i class="fas fa-code"></i></div>
+              <div class="stat-card-value">C &amp; C++</div>
+              <div class="stat-card-label">Primary Languages</div>
+            </div>
+            <div class="stat-card reveal">
+              <div class="stat-card-icon"><i class="fas fa-layer-group"></i></div>
+              <div class="stat-card-value">6+ Projects</div>
+              <div class="stat-card-label">Built &amp; Maintained</div>
+            </div>
+            <div class="stat-card reveal">
+              <div class="stat-card-icon"><i class="fas fa-bullseye"></i></div>
+              <div class="stat-card-value">Full-Stack</div>
+              <div class="stat-card-label">Career Goal</div>
+            </div>
+            <div class="stat-card reveal">
+              <div class="stat-card-icon"><i class="fas fa-globe-asia"></i></div>
+              <div class="stat-card-value">Bangladesh</div>
+              <div class="stat-card-label">Narayanganj</div>
+            </div>
+            <div class="stat-card reveal">
+              <div class="stat-card-icon"><i class="fas fa-laptop-code"></i></div>
+              <div class="stat-card-value">Web Dev</div>
+              <div class="stat-card-label">Current Focus</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==============================
+         SKILLS SECTION
+    ============================== -->
+    <section id="skills">
+      <div class="skills-container">
+
+        <div class="skills-header">
+          <span class="section-tag reveal"><i class="fas fa-microchip"></i> Tech Stack</span>
+          <h2 class="section-title reveal">My <span class="gradient-text">Skills &amp; Tools</span></h2>
+          <p class="section-subtitle reveal">Building a strong foundation — one skill at a time.</p>
+        </div>
+
+        <div class="skills-grid">
+
+          <!-- Programming -->
+          <div class="skill-category-card reveal">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon"><i class="fas fa-terminal"></i></div>
+              <div>
+                <div class="skill-cat-name">Programming</div>
+                <div class="skill-cat-count">Core Languages</div>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag"><i class="fas fa-circle" style="font-size:0.5rem;color:#00d4ff"></i> C</span>
+              <span class="skill-tag"><i class="fas fa-circle" style="font-size:0.5rem;color:#0066ff"></i> C++</span>
+            </div>
+          </div>
+
+          <!-- Web Development -->
+          <div class="skill-category-card reveal">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon"><i class="fas fa-globe"></i></div>
+              <div>
+                <div class="skill-cat-name">Web Development</div>
+                <div class="skill-cat-count">Currently Learning</div>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag learning"><i class="fas fa-sparkles" style="font-size:0.7rem"></i> HTML5</span>
+              <span class="skill-tag learning"><i class="fas fa-sparkles" style="font-size:0.7rem"></i> CSS3</span>
+              <span class="skill-tag learning"><i class="fas fa-sparkles" style="font-size:0.7rem"></i> Responsive Design</span>
+            </div>
+          </div>
+
+          <!-- Tools & Platforms -->
+          <div class="skill-category-card reveal">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon"><i class="fas fa-wrench"></i></div>
+              <div>
+                <div class="skill-cat-name">Tools &amp; Platforms</div>
+                <div class="skill-cat-count">Dev Workflow</div>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag"><i class="fab fa-git-alt" style="color:#f05032"></i> Git</span>
+              <span class="skill-tag"><i class="fab fa-github"></i> GitHub</span>
+              <span class="skill-tag"><i class="fas fa-code" style="color:#007acc"></i> VS Code</span>
+              <span class="skill-tag"><i class="fab fa-figma" style="color:#a259ff"></i> Figma</span>
+              <span class="skill-tag"><i class="fas fa-palette" style="color:#00c4cc"></i> Canva</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Currently Learning -->
+        <div class="currently-learning reveal">
+          <div class="learning-title">
+            <i class="fas fa-rocket"></i>
+            Currently Learning — Progress
+          </div>
+
+          <div class="progress-item">
+            <div class="progress-header">
+              <span class="progress-name">HTML5 &amp; CSS3</span>
+              <span class="progress-pct">65%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" data-width="65"></div>
+            </div>
+          </div>
+
+          <div class="progress-item">
+            <div class="progress-header">
+              <span class="progress-name">Responsive Web Design</span>
+              <span class="progress-pct">50%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" data-width="50"></div>
+            </div>
+          </div>
+
+          <div class="progress-item">
+            <div class="progress-header">
+              <span class="progress-name">Git &amp; GitHub Workflow</span>
+              <span class="progress-pct">75%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" data-width="75"></div>
+            </div>
+          </div>
+
+          <div class="progress-item">
+            <div class="progress-header">
+              <span class="progress-name">Data Structures &amp; Algorithms</span>
+              <span class="progress-pct">20%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill purple" data-width="20"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         PROJECTS SECTION
+    ============================== -->
+    <section id="projects">
+      <div class="projects-container">
+
+        <div class="projects-header">
+          <div>
+            <span class="section-tag reveal"><i class="fas fa-folder-open"></i> Portfolio</span>
+            <h2 class="section-title reveal">Featured <span class="gradient-text">Projects</span></h2>
+            <p class="section-subtitle reveal">Every project teaches me something new.</p>
+          </div>
+          <a href="https://github.com/Supto71" target="_blank" rel="noopener" class="btn-secondary reveal" id="all-projects-github" style="align-self:flex-end">
+            <i class="fab fa-github"></i> View All on GitHub
+          </a>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 1: Share Welfare App -->
+          <div class="project-card reveal">
+            <div class="project-card-top">
+              <div class="project-icon cyan"><i class="fas fa-hand-holding-heart"></i></div>
+              <div class="project-links">
+                <a href="https://github.com/Supto71" target="_blank" rel="noopener" class="project-link-btn" id="project-1-github" aria-label="Share Welfare App GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-number">01 / Featured</div>
+              <div class="project-name">Share Welfare App</div>
+              <p class="project-desc">Transparent platform for managing community funds with contribution tracking, real-time balance monitoring and interactive dashboard.</p>
+              <div class="project-tech">
+                <span class="tech-tag">C</span>
+                <span class="tech-tag">File I/O</span>
+                <span class="tech-tag">Community</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Welfare Fund Management System -->
+          <div class="project-card reveal">
+            <div class="project-card-top">
+              <div class="project-icon blue"><i class="fas fa-coins"></i></div>
+              <div class="project-links">
+                <a href="https://github.com/Supto71" target="_blank" rel="noopener" class="project-link-btn" id="project-2-github" aria-label="Welfare Fund GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-number">02 / Web App</div>
+              <div class="project-name">Welfare Fund Management System</div>
+              <p class="project-desc">Web application for organizing welfare fund operations and maintaining transparent financial records for communities.</p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">Finance</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Radiation Coaching -->
+          <div class="project-card reveal">
+            <div class="project-card-top">
+              <div class="project-icon purple"><i class="fas fa-chalkboard-teacher"></i></div>
+              <div class="project-links">
+                <a href="https://github.com/Supto71" target="_blank" rel="noopener" class="project-link-btn" id="project-3-github" aria-label="Radiation Coaching GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-number">03 / Platform</div>
+              <div class="project-name">Radiation Coaching</div>
+              <p class="project-desc">Academic coaching management platform for schedules, routines and student information — a full-featured digital coaching center.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Flask</span>
+                <span class="tech-tag">Education</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: Tuition Note -->
+          <div class="project-card reveal">
+            <div class="project-card-top">
+              <div class="project-icon green"><i class="fas fa-book-open"></i></div>
+              <div class="project-links">
+                <a href="https://github.com/Supto71" target="_blank" rel="noopener" class="project-link-btn" id="project-4-github" aria-label="Tuition Note GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-number">04 / App</div>
+              <div class="project-name">Tuition Note</div>
+              <p class="project-desc">Digital notebook for lesson planning, student progress tracking and organizing educational resources for tutors.</p>
+              <div class="project-tech">
+                <span class="tech-tag">C</span>
+                <span class="tech-tag">File I/O</span>
+                <span class="tech-tag">Education</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: Diary of Priority -->
+          <div class="project-card reveal">
+            <div class="project-card-top">
+              <div class="project-icon orange"><i class="fas fa-star"></i></div>
+              <div class="project-links">
+                <a href="https://github.com/Supto71" target="_blank" rel="noopener" class="project-link-btn" id="project-5-github" aria-label="Diary of Priority GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-number">05 / Productivity</div>
+              <div class="project-name">Diary of Priority</div>
+              <p class="project-desc">Priority-based digital diary for organizing tasks and personal notes, helping users focus on what matters most.</p>
+              <div class="project-tech">
+                <span class="tech-tag">C</span>
+                <span class="tech-tag">Data Structures</span>
+                <span class="tech-tag">Productivity</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==============================
+         EXPERIENCE / EDUCATION SECTION
+    ============================== -->
+    <section id="experience">
+      <div class="experience-container">
+
+        <!-- Education Column -->
+        <div>
+          <span class="section-tag reveal"><i class="fas fa-graduation-cap"></i> Education</span>
+          <h2 class="section-title reveal">Academic <span class="gradient-text">Journey</span></h2>
+
+          <div class="exp-column-title reveal">
+            <i class="fas fa-university"></i> Education
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2025 — Present</div>
+              <div class="timeline-title">B.Sc. in Computer Science &amp; Engineering</div>
+              <div class="timeline-org">University of Information Technology &amp; Science (UITS)</div>
+              <p class="timeline-desc">First Year CSE student building a strong foundation in programming, data structures, algorithms, and software engineering principles.</p>
+            </div>
+          </div>
+
+          <!-- What I'm Learning -->
+          <div style="margin-top: 2.5rem;">
+            <div class="exp-column-title reveal">
+              <i class="fas fa-lightbulb"></i> What I'm Learning
+            </div>
+            <div class="philosophy-card reveal">
+              <p>Every project teaches me something new. Through building these applications, I'm improving my programming fundamentals, writing cleaner code, structuring projects, and strengthening my problem-solving skills.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Activities Column -->
+        <div>
+          <span class="section-tag reveal"><i class="fas fa-star"></i> Activities</span>
+          <h2 class="section-title reveal">Beyond <span class="gradient-text">Code</span></h2>
+
+          <div class="exp-column-title reveal">
+            <i class="fas fa-tasks"></i> Activities &amp; Interests
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">Ongoing</div>
+              <div class="timeline-title">Mathematics Teacher</div>
+              <div class="timeline-org">Private Tutoring</div>
+              <p class="timeline-desc">Teaching mathematics to students, which has significantly strengthened my analytical thinking, communication, and problem-solving abilities.</p>
+            </div>
+
+            <div class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2025 — Present</div>
+              <div class="timeline-title">Open Source &amp; Personal Projects</div>
+              <div class="timeline-org">GitHub: github.com/Supto71</div>
+              <p class="timeline-desc">Actively building personal projects and contributing to my GitHub profile to practice real-world programming and portfolio building.</p>
+            </div>
+
+            <div class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">Current Focus</div>
+              <div class="timeline-title">Self-Directed Learning</div>
+              <div class="timeline-org">Web Development &amp; DSA</div>
+              <p class="timeline-desc">Preparing for Data Structures &amp; Algorithms while exploring HTML5, CSS3, responsive design and modern Git workflows.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==============================
+         CONTACT SECTION
+    ============================== -->
+    <section id="contact">
+      <div class="contact-container">
+
+        <div class="contact-grid">
+
+          <!-- Contact Info -->
+          <div>
+            <span class="section-tag reveal"><i class="fas fa-satellite-dish"></i> Let's Talk</span>
+            <h2 class="contact-info-title reveal">Get In <span class="gradient-text">Touch</span></h2>
+            <p class="contact-info-desc reveal">
+              I'm always open to new opportunities, collaborations, or just a friendly chat about tech and software. Feel free to reach out!
+            </p>
+
+            <div class="contact-details">
+              <a href="mailto:mdsupto718@gmail.com" class="contact-item reveal" id="contact-email">
+                <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+                <span class="contact-item-text">mdsupto718@gmail.com</span>
+              </a>
+              <a href="tel:+8801975358480" class="contact-item reveal" id="contact-phone">
+                <div class="contact-item-icon"><i class="fas fa-phone"></i></div>
+                <span class="contact-item-text">+880 197 535 8480</span>
+              </a>
+              <a href="https://github.com/Supto71" target="_blank" rel="noopener" class="contact-item reveal" id="contact-github">
+                <div class="contact-item-icon"><i class="fab fa-github"></i></div>
+                <span class="contact-item-text">github.com/Supto71</span>
+              </a>
+              <a href="https://linkedin.com/in/naymon-nafi-supto-4a3ba33b6" target="_blank" rel="noopener" class="contact-item reveal" id="contact-linkedin">
+                <div class="contact-item-icon"><i class="fab fa-linkedin-in"></i></div>
+                <span class="contact-item-text">linkedin.com/in/naymon-nafi-supto</span>
+              </a>
+              <a href="#" class="contact-item reveal" id="contact-location">
+                <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <span class="contact-item-text">Narayanganj, Bangladesh</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form reveal">
+            <form id="contact-form" novalidate>
+
+              <div class="form-group">
+                <label for="name-input">Your Name</label>
+                <input type="text" id="name-input" name="name" placeholder="Enter your name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email-input">Your Email</label>
+                <input type="email" id="email-input" name="email" placeholder="Enter your email" required>
+              </div>
+
+              <div class="form-group">
+                <label for="subject-input">Subject</label>
+                <input type="text" id="subject-input" name="subject" placeholder="What's this about?">
+              </div>
+
+              <div class="form-group">
+                <label for="message-input">Message</label>
+                <textarea id="message-input" name="message" placeholder="Tell me about your project or idea..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-submit" id="submit-btn">
+                <i class="fas fa-paper-plane"></i>
+                Send Message
+              </button>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==============================
+       FOOTER
+  ============================== -->
+  <footer>
+    <div class="footer-brand">NNS.</div>
+    <p class="footer-copy">
+      Built with <span>♥</span> by Naymon Nafi Supto &mdash; 2026
+    </p>
+    <div class="footer-socials">
+      <a href="https://github.com/Supto71" target="_blank" rel="noopener" class="social-link" id="footer-github" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://linkedin.com/in/naymon-nafi-supto-4a3ba33b6" target="_blank" rel="noopener" class="social-link" id="footer-linkedin" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="mailto:mdsupto718@gmail.com" class="social-link" id="footer-email" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Main JS -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
