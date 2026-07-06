@@ -318,7 +318,8 @@ section {
 #hero {
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   padding-top: calc(var(--nav-height) + 2rem);
   padding-bottom: 4rem;
 }
@@ -637,10 +638,7 @@ section {
 
 /* Hero scroll indicator */
 .scroll-indicator {
-  position: absolute;
-  bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-top: 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
