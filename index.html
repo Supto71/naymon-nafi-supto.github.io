@@ -60,11 +60,17 @@
       <li><a href="#contact" class="nav-cta">Contact Me</a></li>
     </ul>
 
-    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
+    <div class="nav-controls" style="display: flex; align-items: center; gap: 1rem;">
+      <button id="theme-toggle" aria-label="Toggle Theme" style="background: none; border: none; color: var(--text-primary); cursor: pointer; font-size: 1.25rem; transition: var(--transition-fast); display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%;">
+        <i class="fas fa-sun"></i>
+      </button>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
   </nav>
 
   <main>
@@ -473,6 +479,66 @@
             </div>
           </div>
 
+        </div>
+        </div>
+
+        <!-- Hidden Projects Container -->
+        <div class="projects-grid more-projects" id="more-projects-container" style="display: none; margin-top: 2rem;">
+          <!-- Project 6: Zero Point Network -->
+          <div class="project-card reveal">
+            <div class="project-card-top">
+              <div class="project-icon cyan"><i class="fas fa-network-wired"></i></div>
+              <div class="project-links">
+                <a href="https://github.com/Supto71/Zero-Point-Network" target="_blank" rel="noopener" class="project-link-btn" aria-label="Zero Point Network GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://zeropointnetwork24.com/" target="_blank" rel="noopener" class="project-link-btn" aria-label="Zero Point Network Live Site">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-number">06 / Business Website</div>
+              <div class="project-name">Zero Point Network</div>
+              <p class="project-desc">Developed a website for Zero Point Network with a focus on presenting its services through a clean, accessible web interface.</p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 7: BD Needs E-commerce -->
+          <div class="project-card reveal">
+            <div class="project-card-top">
+              <div class="project-icon blue"><i class="fas fa-shopping-cart"></i></div>
+              <div class="project-links">
+                <a href="https://github.com/Supto71/BD_Needs_E-commerce_fullstack" target="_blank" rel="noopener" class="project-link-btn" aria-label="BD Needs E-commerce GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://bdneeds.com.bd/" target="_blank" rel="noopener" class="project-link-btn" aria-label="BD Needs E-commerce Live Site">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-number">07 / Full-Stack</div>
+              <div class="project-name">BD Needs E-commerce</div>
+              <p class="project-desc">Developed a full-stack e-commerce web application designed to support an online shopping experience, using a modern web development stack.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Prisma</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+          <button id="show-more-projects-btn" class="btn-primary" style="cursor: pointer; border: none; font-family: var(--font-main);">
+            <i class="fas fa-plus"></i> Show More Projects
+          </button>
         </div>
 
       </div>

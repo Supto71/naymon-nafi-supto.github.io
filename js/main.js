@@ -321,3 +321,51 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
+// --- THEME TOGGLE ---
+const themeToggleBtn = document.getElementById('theme-toggle');
+if (themeToggleBtn) {
+  const currentTheme = localStorage.getItem('theme') || 'dark';
+
+  if (currentTheme === 'light') {
+    document.documentElement.setAttribute('data-theme', 'light');
+    themeToggleBtn.innerHTML = '<i class="fas fa-moon"></i>';
+  } else {
+    themeToggleBtn.innerHTML = '<i class="fas fa-sun"></i>';
+  }
+
+  themeToggleBtn.addEventListener('click', () => {
+    let theme = document.documentElement.getAttribute('data-theme');
+    if (theme === 'light') {
+      document.documentElement.removeAttribute('data-theme');
+      localStorage.setItem('theme', 'dark');
+      themeToggleBtn.innerHTML = '<i class="fas fa-sun"></i>';
+    } else {
+      document.documentElement.setAttribute('data-theme', 'light');
+      localStorage.setItem('theme', 'light');
+      themeToggleBtn.innerHTML = '<i class="fas fa-moon"></i>';
+    }
+  });
+}
+
+// --- SHOW MORE PROJECTS ---
+const showMoreProjectsBtn = document.getElementById('show-more-projects-btn');
+const moreProjectsContainer = document.getElementById('more-projects-container');
+
+if (showMoreProjectsBtn && moreProjectsContainer) {
+  showMoreProjectsBtn.addEventListener('click', () => {
+    if (moreProjectsContainer.style.display === 'none') {
+      moreProjectsContainer.style.display = 'grid';
+      showMoreProjectsBtn.innerHTML = '<i class="fas fa-minus"></i> Show Less';
+      // Smooth scroll down slightly
+      setTimeout(() => {
+        moreProjectsContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 100);
+    } else {
+      moreProjectsContainer.style.display = 'none';
+      showMoreProjectsBtn.innerHTML = '<i class="fas fa-plus"></i> Show More Projects';
+      // Scroll back up to the main projects area
+      document.getElementById('projects').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+}
